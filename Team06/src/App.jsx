@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-
+import "./App.css";
 function App() {
   let [showContent, setShowContent] = useState(false);
   useGSAP(() => {
@@ -66,14 +66,6 @@ function App() {
       ease: "Expo.easeInOut",
     });
 
-    gsap.to(".text", {
-      scale: 1,
-      rotate: 0,
-      duration: 2,
-      delay: "-.8",
-      ease: "Expo.easeInOut",
-    });
-
     const main = document.querySelector(".main");
 
     main?.addEventListener("mousemove", function (e) {
@@ -92,7 +84,7 @@ function App() {
 
   return (
     <>
-      <div className="svg flex items-center justify-center fixed top-0 left-0 z-[100] w-full h-screen overflow-hidden bg-[#000]">
+      <div className="svg flex items-center justify-center fixed top-0 left-0 z-[100] w-full h-screen overflow-hidden">
         <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
           <defs>
             <mask id="viMask">
@@ -121,7 +113,40 @@ function App() {
           />
         </svg>
       </div>
-      {showContent && <div className="main w-full">TEXT</div>}
+      {showContent && (
+        <div className="main w-full rotate-[-10deg] scale-[1.7]">
+          <div className="landing overflow-hidden relative w-full h-screen bg-black">
+            <div className="navbar absolute top-0 left-0 z-[10] w-full py-10 px-10">
+              <div className="logo flex gap-7">
+                <div className="lines flex flex-col gap-[5px]">
+                  <div className="line w-15 h-2 bg-white"></div>
+                  <div className="line w-8 h-2 bg-white"></div>
+                  <div className="line w-5 h-2 bg-white"></div>
+                </div>
+                <h3 className="text-4xl -mt-[8px] leading-none text-white"></h3>
+              </div>
+            </div>
+
+            <div className="imagesdiv relative overflow-hidden w-full h-screen">
+              <img
+                className="absolute sky scale-[1.5] rotate-[-20deg] top-0 left-0 w-full h-full object-cover"
+                src="public\images\sky.png"
+                alt=""
+              />
+              <img
+                className="absolute scale-[1.8] rotate-[-3deg] bg top-0 left-0 w-full h-full object-cover"
+                src="public\images\bg.png"
+                alt=""
+              />
+              <img
+                className="absolute character -bottom-[150%] left-1/2 -translate-x-1/2 rotate-[-20deg] object-cover"
+                src="public\images\character.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }

@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+
+.sky{
+  position: absolute;
+  scale : 1.5 ;
+  rotate:-20deg;
+  top : 0;
+  left:0 ;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
