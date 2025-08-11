@@ -1,17 +1,20 @@
-import { useState } from 'react'
-import './App.css'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
+import React from 'react'
 
 function App() {
-  const [count, setCount] = useState(0);
-  gsap.registerPlugin(ScrollTrigger)
-
   return (
-    <>
-      <div className='svg fixed'></div>
-    </>
+    <div className='svg fixed top-0 left-0 z-[100] h-screen w-full bg-black overflow-hidden'>
+      <svg
+        
+        viewBox='0 0 800 600'
+        preserveAspectRatio='xMidYMid slice'
+      >
+        <defs>
+          <mask>
+            
+          </mask>
+        </defs>
+      </svg>
+    </div>
   )
 }
 
