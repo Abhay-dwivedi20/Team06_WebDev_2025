@@ -1,12 +1,24 @@
-# React + Vite
+# Digital Freedom Timeline
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a project to give a tribute to our national heroes.
 
-Currently, two official plugins are available:
+# Team06 :
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    Members :-
+    01 Abhay Dwivedi
+    02 Akshat Vishwakarma
+    03 Devansh Bajpai
 
-## Expanding the ESLint configuration
+## Roles of members :
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+    Devansh Bajpai : Created the animations in the website with the use of gsap and scrolltriggers
+    Akshat Vishwakarma : Helped in implementing the tailwind css and frontend ui.
+    Abhay Dwivedi : Helped in resource collection and debugging the code.
+
+## Technologies used :
+
+# React : For frontend
+
+        GSAP : for creating animations
+        Scrolltrigger : To generate the animations on scoll.
+        Tailwind : Framework for css
