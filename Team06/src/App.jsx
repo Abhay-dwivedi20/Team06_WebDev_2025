@@ -57,12 +57,13 @@ function App() {
     });
 
     gsap.to(".character", {
-      scale: 1.4,
+      scale: 1.1,
       x: "-50%",
       bottom: "-25%",
       rotate: 0,
       duration: 2,
       delay: "-.8",
+      objectFit: "cover",
       ease: "Expo.easeInOut",
     });
 
@@ -139,7 +140,7 @@ function App() {
                 alt=""
               />
               <img
-                className="absolute character -bottom-[150%] left-1/2 -translate-x-1/2 rotate-[-20deg] object-cover"
+                className="absolute h-full w-[30%] character -bottom-[200%] left-1/2 -translate-x-1/2 rotate-[-20deg] z-[5]"
                 src="public\images\character.png"
                 alt=""
               />
@@ -147,6 +148,7 @@ function App() {
           </div>
         </div>
       )}
+      <div className=""></div>
     </>
   );
 }
