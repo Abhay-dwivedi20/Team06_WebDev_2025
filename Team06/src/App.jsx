@@ -121,9 +121,7 @@ function App() {
           />
         </svg>
       </div>
-      <div className="hero">
-        <div className="imagesDiv"></div>
-      </div>
+      {showContent && <div className="main w-full">TEXT</div>}
     </>
   );
 }
